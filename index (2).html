@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Northgate Construction</title>
+<meta name="description" content="Design-led builders for new builds, renovations, commercial fit-outs and structural works. Book a free site assessment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{bg:'var(--bg)',surface:'var(--surface)',ink:'var(--ink)',muted:'var(--muted)',accent:'var(--accent)','accent-ink':'var(--accent-ink)',tint:'var(--tint)',line:'var(--line)',panel:'var(--panel)'},fontFamily:{display:['"Familjen Grotesk"','ui-sans-serif','system-ui','sans-serif'],sans:['"Hanken Grotesk"','ui-sans-serif','system-ui','sans-serif']}}}}
+</script>
+<style>
+:root{--bg:#ECEBE7;--surface:#F8F7F4;--ink:#161C20;--muted:#525B60;--accent:#1F44C7;--accent-ink:#FFFFFF;--tint:#DFDED8;--line:#CDCBC4;--panel:#0E2452;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101418;--surface:#171C21;--ink:#ECEEEF;--muted:#9AA4AA;--accent:#8FA8FF;--accent-ink:#0B1230;--tint:#1F262C;--line:#2A3138;--panel:#0A1A3D}}
+:root[data-theme="dark"]{--bg:#101418;--surface:#171C21;--ink:#ECEEEF;--muted:#9AA4AA;--accent:#8FA8FF;--accent-ink:#0B1230;--tint:#1F262C;--line:#2A3138;--panel:#0A1A3D}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 5rem)}
+body{background:var(--bg);color:var(--ink);font-family:"Hanken Grotesk",ui-sans-serif,system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:"Familjen Grotesk",ui-sans-serif,system-ui,sans-serif;letter-spacing:-.025em;line-height:1.05}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.grid-bg{background-image:linear-gradient(rgba(220,230,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(220,230,255,.07) 1px,transparent 1px);background-size:24px 24px}
+.ln{fill:none;stroke:#DCE6FF;stroke-width:1.6;stroke-linecap:square;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s cubic-bezier(.3,.7,.2,1) forwards;animation-delay:calc(var(--i,0)*.14s)}
+.thin{stroke-width:1;stroke-opacity:.6}
+.dim{fill:#DCE6FF;font:500 11px "Hanken Grotesk",sans-serif;opacity:0;animation:fade .6s ease 2.4s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.ln{animation:none;stroke-dashoffset:0}.dim{animation:none;opacity:1}html{scroll-behavior:auto}#track{transition:none!important}}
+.field{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem;color:var(--ink);font:inherit}
+.field:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 30%,transparent)}
+.field[aria-invalid="true"]{border-color:#C0392B}
+</style>
+</head>
+<body>
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:text-accent-ink">Skip to content</a>
+
+<header class="sticky z-40 border-b border-line bg-bg/85 backdrop-blur" style="top:env(safe-area-inset-top,0px)">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+    <a href="#top" class="font-display text-xl font-bold tracking-tight">Northgate <span class="font-medium text-muted">Construction</span></a>
+    <nav aria-label="Primary" class="hidden items-center gap-8 text-sm font-medium md:flex">
+      <a class="hover:text-accent" href="#services">What we build</a>
+      <a class="hover:text-accent" href="#clients">Client words</a>
+      <a class="hover:text-accent" href="#book">Visit</a>
+    </nav>
+    <a href="#book" class="rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-accent-ink transition hover:opacity-90">Book an appointment</a>
+  </div>
+</header>
+
+<main id="main">
+<!-- Hero -->
+<section id="top" class="mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-14 lg:grid-cols-12 lg:pt-20">
+  <div class="lg:col-span-6">
+    <h1 class="text-5xl font-bold sm:text-6xl lg:text-7xl">Built once. Built to last a century.</h1>
+    <p class="mt-6 max-w-lg text-lg text-muted">Northgate designs, engineers and builds homes, offices and warehouses with one accountable team, a fixed price and a handover date we stand behind.</p>
+    <div class="mt-9 flex flex-wrap gap-4">
+      <a href="#book" class="rounded-md bg-accent px-7 py-3.5 font-semibold text-accent-ink transition hover:opacity-90">Book a free site assessment</a>
+      <a href="#services" class="rounded-md border border-line px-7 py-3.5 font-semibold transition hover:bg-tint">See what we build</a>
+    </div>
+    <dl class="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-line pt-6 text-sm text-muted">
+      <div><dt class="sr-only">Projects</dt><dd><strong class="block font-display text-3xl text-ink">1,100+</strong>projects delivered</dd></div>
+      <div><dt class="sr-only">Years</dt><dd><strong class="block font-display text-3xl text-ink">38</strong>years on site</dd></div>
+      <div><dt class="sr-only">On time</dt><dd><strong class="block font-display text-3xl text-ink">94%</strong>handed over on time</dd></div>
+    </dl>
+  </div>
+
+  <figure class="lg:col-span-6">
+    <div class="grid-bg overflow-hidden rounded-xl bg-panel p-4 sm:p-8">
+      <svg viewBox="0 0 500 520" class="mx-auto block h-auto w-full max-w-[34rem]" role="img" aria-label="Line drawing of a six-storey building elevation with dimensions">
+        <g>
+          <path class="ln thin" style="--i:0" pathLength="1" d="M20 440H480"/>
+          <path class="ln" style="--i:1" pathLength="1" d="M60 440V300H150V90H320V250H420V440"/>
+          <path class="ln" style="--i:3" pathLength="1" d="M170 90V70H300V90"/>
+          <path class="ln thin" style="--i:4" pathLength="1" d="M150 140H320M150 190H320M150 240H320M150 290H320M150 340H320M150 390H320"/>
+          <path class="ln thin" style="--i:5" pathLength="1" d="M192 90V440M235 90V440M278 90V440"/>
+          <path class="ln thin" style="--i:6" pathLength="1" d="M60 350H150M60 400H150M320 300H420M320 350H420M320 400H420"/>
+          <path class="ln thin" style="--i:7" pathLength="1" d="M448 90V440M440 90H456M440 440H456"/>
+          <path class="ln thin" style="--i:8" pathLength="1" d="M60 482H420M60 474V490M420 474V490"/>
+          <g stroke="#DCE6FF" stroke-opacity=".35" stroke-dasharray="4 5"><path d="M150 40V90M235 40V70M320 40V90"/></g>
+          <g fill="none" stroke="#DCE6FF" stroke-width="1.2" class="dim"><circle cx="150" cy="30" r="10"/><circle cx="235" cy="30" r="10"/><circle cx="320" cy="30" r="10"/></g>
+          <text class="dim" x="146" y="34">A</text><text class="dim" x="231" y="34">B</text><text class="dim" x="316" y="34">C</text>
+          <text class="dim" x="470" y="270" transform="rotate(-90 470 270)" text-anchor="middle">21.4 m</text>
+          <text class="dim" x="240" y="510" text-anchor="middle">36.0 m</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption class="mt-3 text-sm text-muted">Riverside Mixed-Use, six storeys, handed over in 2025.</figcaption>
+  </figure>
+</section>
+
+<!-- Services -->
+<section id="services" class="border-y border-line bg-surface">
+  <div class="mx-auto max-w-6xl px-5 py-20 lg:py-28">
+    <h2 class="max-w-2xl text-4xl font-bold sm:text-5xl">Five ways we take a project from drawing to keys.</h2>
+    <div class="mt-12 grid gap-8 lg:grid-cols-12">
+      <div id="tabs" role="tablist" aria-label="Services" aria-orientation="vertical" class="-mx-5 flex gap-2 overflow-x-auto px-5 pb-2 lg:col-span-4 lg:mx-0 lg:flex-col lg:overflow-visible lg:px-0 lg:pb-0"></div>
+      <div id="panel" role="tabpanel" tabindex="0" class="rounded-xl border border-line bg-bg p-7 sm:p-10 lg:col-span-8"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="clients" class="mx-auto max-w-6xl px-5 py-20 lg:py-28">
+  <h2 class="max-w-2xl text-4xl font-bold sm:text-5xl">Clients who came back for a second build.</h2>
+  <div class="mt-12" role="region" aria-roledescription="carousel" aria-label="Client testimonials">
+    <div class="overflow-hidden rounded-xl bg-panel text-white">
+      <div id="track" class="flex transition-transform duration-700 ease-out" aria-live="off"></div>
+    </div>
+    <div class="mt-6 flex items-center justify-between">
+      <div id="dots" class="flex gap-2" role="group" aria-label="Choose a testimonial"></div>
+      <div class="flex gap-3">
+        <button id="prev" class="grid h-12 w-12 place-items-center rounded-md border border-line bg-surface transition hover:bg-tint" aria-label="Previous testimonial"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button id="next" class="grid h-12 w-12 place-items-center rounded-md border border-line bg-surface transition hover:bg-tint" aria-label="Next testimonial"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking -->
+<section id="book" class="border-t border-line bg-surface">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 py-20 lg:grid-cols-12 lg:py-28">
+    <div class="lg:col-span-5">
+      <h2 class="text-4xl font-bold sm:text-5xl">Book an appointment.</h2>
+      <p class="mt-5 max-w-md text-muted">Tell us about your project and pick a time. A senior estimator will confirm within one working day. The site assessment is free and comes with a written scope.</p>
+      <address class="mt-10 space-y-4 text-sm not-italic">
+        <p><strong class="block text-base">Northgate Construction</strong>112 Foundry Road, Unit 4<br>Your City, 000 000</p>
+        <p><strong class="block text-base">Office hours</strong>Monday to Friday, 7:30 to 17:30<br>Saturday site visits by appointment</p>
+        <p><a class="font-semibold text-accent underline underline-offset-4" href="tel:+10000000000">+1 000 000 0000</a></p>
+      </address>
+    </div>
+
+    <div class="lg:col-span-7">
+      <form id="booking" novalidate class="grid gap-x-5 gap-y-4 rounded-xl border border-line bg-bg p-6 sm:grid-cols-2 sm:p-9">
+        <fieldset class="sm:col-span-2">
+          <legend class="mb-2 text-sm font-semibold">How would you like to meet?</legend>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <label class="block cursor-pointer"><input type="radio" name="visit" value="Site visit" class="peer sr-only" checked><span class="block rounded-lg border border-line p-4 peer-checked:border-accent peer-checked:bg-tint peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-accent"><strong class="block">Site visit</strong><span class="text-sm text-muted">We come to you and walk the plot.</span></span></label>
+            <label class="block cursor-pointer"><input type="radio" name="visit" value="Office consultation" class="peer sr-only"><span class="block rounded-lg border border-line p-4 peer-checked:border-accent peer-checked:bg-tint peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-accent"><strong class="block">Office consultation</strong><span class="text-sm text-muted">Bring drawings, or just ideas.</span></span></label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="name" class="mb-1.5 block text-sm font-semibold">Full name</label>
+          <input id="name" name="name" class="field" autocomplete="name" required aria-describedby="name-err">
+          <p id="name-err" class="mt-1 min-h-5 text-sm text-red-600"></p>
+        </div>
+        <div>
+          <label for="email" class="mb-1.5 block text-sm font-semibold">Email</label>
+          <input id="email" name="email" type="email" class="field" autocomplete="email" required aria-describedby="email-err">
+          <p id="email-err" class="mt-1 min-h-5 text-sm text-red-600"></p>
+        </div>
+        <div>
+          <label for="phone" class="mb-1.5 block text-sm font-semibold">Phone <span class="font-normal text-muted">(optional)</span></label>
+          <input id="phone" name="phone" type="tel" class="field" autocomplete="tel">
+          <p class="mt-1 min-h-5"></p>
+        </div>
+        <div>
+          <label for="project" class="mb-1.5 block text-sm font-semibold">Project type</label>
+          <select id="project" name="project" class="field" required aria-describedby="project-err"><option value="">Choose a service</option></select>
+          <p id="project-err" class="mt-1 min-h-5 text-sm text-red-600"></p>
+        </div>
+        <div>
+          <label for="date" class="mb-1.5 block text-sm font-semibold">Preferred date</label>
+          <input id="date" name="date" type="date" class="field" required aria-describedby="date-err">
+          <p id="date-err" class="mt-1 min-h-5 text-sm text-red-600"></p>
+        </div>
+        <div>
+          <label for="time" class="mb-1.5 block text-sm font-semibold">Preferred time</label>
+          <select id="time" name="time" class="field" required aria-describedby="time-err"><option value="">Choose a time</option></select>
+          <p id="time-err" class="mt-1 min-h-5 text-sm text-red-600"></p>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="notes" class="mb-1.5 block text-sm font-semibold">About the project <span class="font-normal text-muted">(optional)</span></label>
+          <textarea id="notes" name="notes" rows="3" class="field" placeholder="Location, rough size, budget range, target start"></textarea>
+        </div>
+        <div class="sm:col-span-2">
+          <button type="submit" class="w-full rounded-md bg-accent px-7 py-4 font-semibold text-accent-ink transition hover:opacity-90 sm:w-auto">Request this appointment</button>
+        </div>
+      </form>
+      <div id="success" hidden tabindex="-1" role="status" class="rounded-xl border border-line bg-tint p-8 sm:p-12">
+        <h3 class="text-3xl font-bold">Request received.</h3>
+        <p id="success-msg" class="mt-4 max-w-md text-muted"></p>
+        <button id="again" class="mt-8 rounded-md border border-line bg-surface px-6 py-3 font-semibold transition hover:opacity-90">Book another appointment</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="border-t border-line">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-8 text-sm text-muted">
+    <p>&copy; <span id="year"></span> Northgate Construction. Licensed, bonded and insured.</p>
+    <p>Every project carries a 10-year structural warranty.</p>
+  </div>
+</footer>
+
+<script>
+/* Edit this object to re-skin the site for another business. */
+const SITE={
+  services:[
+    {name:'New builds',desc:'Homes, apartment blocks and light industrial buildings, delivered from planning permission to handover under one contract.',scope:['Design coordination and permits','Foundations, frame and envelope','Fixed-price contract and monthly cost reports'],time:'9 to 18 months',size:'200 to 12,000 m²'},
+    {name:'Renovation and extensions',desc:'Reworking what you already own, with the structure surveyed first so there are no surprises behind the plaster.',scope:['Structural survey and opening-up works','Extensions, lofts and basements','Living in place with phased works'],time:'3 to 9 months',size:'30 to 600 m²'},
+    {name:'Commercial fit-out',desc:'Offices, retail and hospitality spaces built around your opening date, with out-of-hours work where the business needs it.',scope:['Space planning and joinery','Mechanical, electrical and data','Compliance and sign-off'],time:'6 to 20 weeks',size:'150 to 5,000 m²'},
+    {name:'Structural and civil works',desc:'Groundworks, retaining walls, steel frames and concrete structures, engineered and inspected by our own team.',scope:['Excavation and piling','Reinforced concrete and steel','Independent engineer inspections'],time:'4 to 14 months',size:'Project specific'},
+    {name:'Maintenance contracts',desc:'Planned upkeep for property owners and managers, so small defects never become expensive ones.',scope:['Annual condition surveys','Priority call-out within 24 hours','One monthly invoice'],time:'12-month terms',size:'Single sites or portfolios'}
+  ],
+  reviews:[
+    {q:'Our warehouse conversion finished three weeks early and under the agreed price. The weekly site report meant I never had to chase anyone.',n:'Helen Marsh',d:'Operations director, Marsh Logistics. 4,200 m² conversion'},
+    {q:'They found a failing beam in the survey that two other builders missed. That one finding saved us far more than the fee.',n:'Tomas Berg',d:'Homeowner. Victorian terrace extension'},
+    {q:'Fit-out ran over two weekends so the shop never closed. The finish is better than the renderings.',n:'Aisha Rahman',d:'Founder, Kiln Coffee. Three-site roll-out'},
+    {q:'It is our third building with Northgate. The site manager is the same person every time, and that is why we keep coming back.',n:'David Okafor',d:'Development lead, Alder Homes. 48-unit scheme'}
+  ],
+  times:['08:00','09:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00']
+};
+const $=s=>document.querySelector(s);
+const fmtDay=d=>d.toLocaleDateString('en-US',{weekday:'long',day:'numeric',month:'long'});
+const iso=d=>{const z=new Date(d.getTime()-d.getTimezoneOffset()*6e4);return z.toISOString().slice(0,10)};
+const today=new Date();
+$('#year').textContent=today.getFullYear();
+
+/* Services as tabs */
+const tabs=$('#tabs'),panel=$('#panel');
+tabs.innerHTML=SITE.services.map((s,i)=>`<button role="tab" id="tab${i}" aria-controls="panel" aria-selected="${i===0}" tabindex="${i===0?0:-1}" class="shrink-0 rounded-md border border-line px-4 py-3 text-left font-display text-lg font-medium transition hover:bg-tint aria-selected:border-accent aria-selected:bg-accent aria-selected:text-accent-ink">${s.name}</button>`).join('');
+const tabEls=[...tabs.children];
+function showService(i){
+  tabEls.forEach((t,k)=>{t.setAttribute('aria-selected',k===i);t.tabIndex=k===i?0:-1});
+  const s=SITE.services[i];panel.setAttribute('aria-labelledby','tab'+i);
+  panel.innerHTML=`<h3 class="text-3xl font-bold sm:text-4xl">${s.name}</h3>
+  <p class="mt-4 max-w-xl text-lg text-muted">${s.desc}</p>
+  <ul class="mt-7 space-y-3">${s.scope.map(x=>`<li class="flex gap-3"><svg class="mt-1 h-5 w-5 shrink-0 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>${x}</li>`).join('')}</ul>
+  <dl class="mt-9 grid max-w-md grid-cols-2 gap-6 border-t border-line pt-6"><div><dt class="text-sm text-muted">Typical duration</dt><dd class="font-display text-xl font-bold">${s.time}</dd></div><div><dt class="text-sm text-muted">Typical size</dt><dd class="font-display text-xl font-bold">${s.size}</dd></div></dl>
+  <a href="#book" class="mt-8 inline-block rounded-md bg-accent px-6 py-3 font-semibold text-accent-ink transition hover:opacity-90">Book an appointment</a>`;
+}
+tabEls.forEach((t,i)=>t.addEventListener('click',()=>showService(i)));
+tabs.addEventListener('keydown',e=>{
+  const k={ArrowDown:1,ArrowRight:1,ArrowUp:-1,ArrowLeft:-1}[e.key];if(!k)return;
+  e.preventDefault();const i=(tabEls.indexOf(document.activeElement)+k+tabEls.length)%tabEls.length;showService(i);tabEls[i].focus();
+});
+showService(0);
+$('#project').insertAdjacentHTML('beforeend',SITE.services.map(s=>`<option>${s.name}</option>`).join('')+'<option>Not sure yet</option>');
+$('#time').insertAdjacentHTML('beforeend',SITE.times.map(t=>`<option>${t}</option>`).join(''));
+$('#date').min=iso(today);
+
+/* Testimonial slider */
+const track=$('#track'),dots=$('#dots'),N=SITE.reviews.length;let cur=0,timer;
+track.innerHTML=SITE.reviews.map((r,i)=>`<figure class="min-w-full p-8 sm:p-14" role="group" aria-roledescription="slide" aria-label="${i+1} of ${N}">
+  <blockquote class="font-display text-2xl font-medium leading-snug sm:text-4xl" style="max-width:34ch">${r.q}</blockquote>
+  <figcaption class="mt-8 text-sm text-white/70"><strong class="block text-base text-white">${r.n}</strong>${r.d}</figcaption></figure>`).join('');
+dots.innerHTML=SITE.reviews.map((_,i)=>`<button class="h-3 w-3 rounded-sm bg-line transition-all aria-[current=true]:w-8 aria-[current=true]:bg-accent" aria-label="Show testimonial ${i+1}"></button>`).join('');
+const dotEls=[...dots.children];
+function go(n,user){
+  cur=(n+N)%N;track.style.transform=`translateX(-${cur*100}%)`;
+  [...track.children].forEach((s,i)=>s.setAttribute('aria-hidden',i!==cur));
+  dotEls.forEach((d,i)=>d.setAttribute('aria-current',i===cur));
+  if(user)track.setAttribute('aria-live','polite');
+}
+dotEls.forEach((d,i)=>d.addEventListener('click',()=>go(i,true)));
+$('#prev').addEventListener('click',()=>go(cur-1,true));
+$('#next').addEventListener('click',()=>go(cur+1,true));
+const region=track.closest('[role=region]');
+const stop=()=>clearInterval(timer);
+const start=()=>{stop();if(!matchMedia('(prefers-reduced-motion:reduce)').matches)timer=setInterval(()=>go(cur+1),7000)};
+['mouseenter','focusin'].forEach(ev=>region.addEventListener(ev,stop));
+['mouseleave','focusout'].forEach(ev=>region.addEventListener(ev,start));
+let x0=null;
+track.addEventListener('pointerdown',e=>x0=e.clientX);
+track.addEventListener('pointerup',e=>{if(x0!==null&&Math.abs(e.clientX-x0)>50)go(cur+(e.clientX<x0?1:-1),true);x0=null});
+go(0);start();
+
+/* Booking form */
+const form=$('#booking');
+const setErr=(id,msg)=>{$('#'+id+'-err').textContent=msg;$('#'+id).setAttribute('aria-invalid','true')};
+function clearErr(id){const e=$('#'+id+'-err');if(e)e.textContent='';$('#'+id).removeAttribute('aria-invalid')}
+form.addEventListener('input',e=>e.target.id&&clearErr(e.target.id));
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  ['name','email','project','date','time'].forEach(clearErr);
+  const v=Object.fromEntries(new FormData(form));const errs={};
+  if(v.name.trim().length<2)errs.name='Enter your full name.';
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email))errs.email='Enter an email address like name@example.com.';
+  if(!v.project)errs.project='Choose a project type.';
+  if(!v.date)errs.date='Choose a date.';
+  else{const d=new Date(v.date+'T12:00');
+    if(iso(d)<iso(today))errs.date='Choose today or a later date.';
+    else if(d.getDay()===0)errs.date='We do not book on Sundays. Choose Monday to Saturday.'}
+  if(!v.time)errs.time='Choose a time.';
+  const keys=Object.keys(errs);
+  if(keys.length){keys.forEach(k=>setErr(k,errs[k]));$('#'+keys[0]).focus();return}
+  /* Replace this block with a fetch() to your booking endpoint. */
+  $('#success-msg').textContent=`Thank you, ${v.name.trim().split(' ')[0]}. We have your ${v.visit.toLowerCase()} request for ${fmtDay(new Date(v.date+'T12:00'))} at ${v.time}. A senior estimator will confirm by email at ${v.email} within one working day.`;
+  form.hidden=true;$('#success').hidden=false;$('#success').focus();
+});
+$('#again').addEventListener('click',()=>{form.reset();$('#success').hidden=true;form.hidden=false;$('#name').focus()});
+</script>
+</body>
+</html>
